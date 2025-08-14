@@ -4,6 +4,9 @@ import "./LanguageSelector.css"; // Create this for styling
 const LanguageSelector = ({ onSelect }) => (
   <div className="selection-container">
     <h3>Select Sign Language</h3>
+    <label className="maintenance-notice">
+        Indian Sign Language service is currently undergoing upgrades. Please use American Sign Language.
+    </label>
     <div className="card-container">
       {/* American Sign Language */}
       <div className="lang-card" onClick={() => onSelect("asl")}>
@@ -24,6 +27,8 @@ const LanguageSelector = ({ onSelect }) => (
         />
         <h4>Indian Sign Language</h4>
       </div>
+      
+
     </div>
   </div>
 );

@@ -38,3 +38,27 @@
   margin-top: 15px;
   font-size: 1.2rem; /* Bigger text */
 }
+
+.maintenance-notice {
+  background-color: white;
+  color: red;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1rem;
+  margin-top: 10px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  text-align: center;
+  display: inline-block;
+  box-shadow: 0 0 15px rgba(255, 0, 0, 1);
+  animation: hardGlow 1.2s infinite alternate;
+}
+
+@keyframes hardGlow {
+  0% {
+    box-shadow: 0 0 15px rgba(255, 0, 0, 1), 0 0 30px rgba(255, 0, 0, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 35px rgba(255, 0, 0, 1), 0 0 70px rgba(255, 0, 0, 1);
+  }
+}
