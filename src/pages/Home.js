@@ -5,6 +5,7 @@ import { FaInfoCircle } from "react-icons/fa";
 import { Element } from "react-scroll";
 import { Link } from "react-router-dom";
 import logo from "../assets/heroLogo.png";
+
 import "./Home.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -99,13 +100,13 @@ const Home = () => {
           <div className="team-grid">
             <div className="team-member" data-aos="fade-up">
               <img src="/images/onkar_giri.jpg" alt="Onkar Giri" />
-              <h4>Onkar M Giri</h4>
+              <h4>Onkar Giri</h4>
               <p>Model Creation & Integration</p>
             </div>
             <div className="team-member" data-aos="fade-up" data-aos-delay="100">
               <img src="/images/viraj_mulik.jpg" alt="Viraj Mulik" />
               <h4>Viraj Mulik</h4>
-              <p>Frontend Developer</p>
+              <p>Backend & Model Integration</p>
             </div>
             <div className="team-member" data-aos="fade-up" data-aos-delay="200">
               <img src="/images/viraj_patole.jpg" alt="Viraj Patole" />
@@ -113,12 +114,12 @@ const Home = () => {
               <p>Frontend Developer</p>
             </div>
             <div className="team-member" data-aos="fade-up" data-aos-delay="300">
-              <img src="/images/harshvardhan_killedar.jpg" alt="Harshvardhan Killedar" />
+              <img src="/images/harshwardhan_killedar.jpg" alt="Harshvardhan Killedar" />
               <h4>Harshvardhan Killedar</h4>
               <p>Documentation Head</p>
             </div>
             <div className="team-member" data-aos="fade-up" data-aos-delay="300">
-              <img src="\images\Digvijay-Photoroom 1.png" alt="Harshvardhan Killedar" />
+              <img src="\images\digvijay_pawar.jpg" alt="Digvijay Pawar" />
               <h4>Digvijay Pawar</h4>
               <p>Documentation </p>
             </div>
@@ -127,27 +128,7 @@ const Home = () => {
       </Element>
 
       {/* Footer Section */}
-      <footer className="footer" id="contact" data-aos="fade-up">
-        <div className="footer-content">
-          <p>© 2025 <strong>FingerTalk</strong>. All rights reserved.</p>
-          <p>
-            Email: <a href="https://mail.google.com/mail/?view=cm&fs=1&to=team.fingertalk@gmail.com" target="_blank" rel="noopener noreferrer">team.fingertalk@gmail.com</a> |
-            Phone: 9767122970
-          </p>
-          {/* Social Media Links */}
-          <div className="social-icons">
-            <a href="https://www.linkedin.com/in/onkargiri29/" target="_blank" rel="noreferrer" title="LinkedIn">
-              <i className="fab fa-linkedin-in"></i>
-            </a>
-            <a href="https://github.com/Onkargiri29" target="_blank" rel="noreferrer" title="GitHub">
-              <i className="fab fa-github"></i>
-            </a>
-            <a href="https://www.instagram.com/onkar_giri29/" target="_blank" rel="noreferrer" title="Instagram">
-              <i className="fab fa-instagram"></i>
-            </a>
-          </div>
-        </div>
-      </footer>
+      
     </div>
   );
 };

@@ -11,7 +11,7 @@ const ProfilePopup = ({ user, onLogout, onClose }) => {
       if (popupRef.current && !popupRef.current.contains(event.target)) {
         onClose(); // call parent to close popup
       }
-    };
+    };  
     document.addEventListener("mousedown", handleClickOutside);
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, [onClose]);

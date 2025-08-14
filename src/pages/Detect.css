@@ -6,14 +6,14 @@ body {
 .detect-page {
   padding: 2rem;
   text-align: center;
-  background-color: #f8f9fa;
+  background: linear-gradient(22deg,rgba(210, 131, 255, 1) 0%, rgba(74, 10, 119, 1) 100%);
   min-height: 100vh;
 }
 
 .detect-title {
   font-size: 2.5rem;
   margin-bottom: 2rem;
-  color: #333;
+  color: black;
 }
 
 .selection-container {

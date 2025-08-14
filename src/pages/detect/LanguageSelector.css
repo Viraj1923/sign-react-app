@@ -1,0 +1,40 @@
+.selection-container {
+    
+  text-align: center;
+  padding: 20px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+  flex-wrap: wrap; /* Helps on smaller screens */
+}
+
+.lang-card {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  width: 240px; /* Increased width */
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.lang-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.lang-flag {
+  width: 100%;
+  height: 140px; /* Increased height */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.lang-card h4 {
+  margin-top: 15px;
+  font-size: 1.2rem; /* Bigger text */
+}

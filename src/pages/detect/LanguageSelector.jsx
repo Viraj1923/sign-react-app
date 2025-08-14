@@ -1,10 +1,30 @@
 import React from "react";
+import "./LanguageSelector.css"; // Create this for styling
 
 const LanguageSelector = ({ onSelect }) => (
   <div className="selection-container">
     <h3>Select Sign Language</h3>
-    <button className="select-btn" onClick={() => onSelect("asl")}>American Sign Language</button>
-    <button className="select-btn" onClick={() => onSelect("isl")}>Indian Sign Language</button>
+    <div className="card-container">
+      {/* American Sign Language */}
+      <div className="lang-card" onClick={() => onSelect("asl")}>
+        <img
+          src="/images/usa-flag.png"
+          alt="American Flag"
+          className="lang-flag"
+        />
+        <h4>American Sign Language</h4>
+      </div>
+
+      {/* Indian Sign Language */}
+      <div className="lang-card" onClick={() => onSelect("isl")}>
+        <img
+          src="/images/india-flag.png"
+          alt="Indian Flag"
+          className="lang-flag"
+        />
+        <h4>Indian Sign Language</h4>
+      </div>
+    </div>
   </div>
 );
 

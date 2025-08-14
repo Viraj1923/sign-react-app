@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { FaBars, FaTimes, FaUserCircle } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 import { FiUser } from "react-icons/fi";
 // import ProfilePopup from "./ProfilePopup";
 import "./Navbar.css";
@@ -22,7 +22,7 @@ const Navbar = () => {
   const [showProfile, setShowProfile] = useState(false);
 
 
-  const toggleProfile = () => setShowProfile(prev => !prev);
+  // const toggleProfile = () => setShowProfile(prev => !prev);
 
   const toggleMenu = () => setIsOpen(!isOpen);
   const closeMenu = () => setIsOpen(false);
