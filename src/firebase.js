@@ -20,13 +20,12 @@ import { initializeApp } from "firebase/app";
 import { getAuth, GoogleAuthProvider } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDra9k9fUOAfImp7yXyBBhSuSSCrHzztII",
-  authDomain: "slr-fingertalk.firebaseapp.com",
-  projectId: "slr-fingertalk",
-  storageBucket: "slr-fingertalk.firebasestorage.app",
-  messagingSenderId: "651023047429",
-  appId: "1:651023047429:web:c8021ed7c3f0b0463e356c",
-  measurementId: "G-EPS33CX57X"
+  apiKey: "AIzaSyDflLjbxCiP5kpOr5eorfBU3a8SrdItPlc",
+  authDomain: "fingertalkauth.firebaseapp.com",
+  projectId: "fingertalkauth",
+  storageBucket: "fingertalkauth.firebasestorage.com",
+  messagingSenderId: "1034270713819",
+  appId: "1:1034270713819:web:6508ed5cad019437fae9fe"
 };
 
 const app = initializeApp(firebaseConfig);

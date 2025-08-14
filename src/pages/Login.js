@@ -6,12 +6,13 @@ import {
   signInWithEmailAndPassword,
   createUserWithEmailAndPassword,
   sendPasswordResetEmail,
-  GoogleAuthProvider,
-  updateProfile ,
+  // GoogleAuthProvider,
+  updateProfile,
 } from "firebase/auth";
-import { auth } from "../firebase.js";
+import { auth,provider } from "../firebase.js";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
+
 
 export default function AuthPage() {
   const navigate = useNavigate();
@@ -23,37 +24,39 @@ export default function AuthPage() {
   // Google Auth
   const handleGoogleAuth = async () => {
     try {
-      const provider = new GoogleAuthProvider();
-      await signInWithPopup(auth, provider);
-      toast.success("Welcome! You’ve logged in with Google.");
+      const result = await signInWithPopup(auth, provider);
+      const user = result.user;
+      localStorage.setItem("user", JSON.stringify(user));
+      toast.success("Google login successful!");
       navigate("/");
     } catch (error) {
-      toast.error("Google authentication failed. Please try again.");
+      console.error("Google Sign-in Error:", error.message);
+      toast.error("Failed to sign in with Google");
     }
   };
 
   // Email Auth
   const handleAuth = async (e) => {
-  e.preventDefault();
-  try {
-    if (isLogin) {
-      await signInWithEmailAndPassword(auth, email, password);
-      toast.success("Login successful! Welcome back.");
-    } else {
-      const userCredential = await createUserWithEmailAndPassword(auth, email, password);
-      
-      // Save displayName
-      await updateProfile(userCredential.user, {
-        displayName: name,
-      });
+    e.preventDefault();
+    try {
+      if (isLogin) {
+        await signInWithEmailAndPassword(auth, email, password);
+        toast.success("Login successful! Welcome back.");
+      } else {
+        const userCredential = await createUserWithEmailAndPassword(auth, email, password);
 
-      toast.success("Your account has been created successfully!");
+        // Save displayName
+        await updateProfile(userCredential.user, {
+          displayName: name,
+        });
+
+        toast.success("Your account has been created successfully!");
+      }
+      navigate("/");
+    } catch (error) {
+      toast.error(error.message || "Authentication failed. Please try again.");
     }
-    navigate("/");
-  } catch (error) {
-    toast.error(error.message || "Authentication failed. Please try again.");
-  }
-};
+  };
 
   // Forgot Password
   const handleForgotPassword = async () => {
@@ -77,7 +80,7 @@ export default function AuthPage() {
           <form onSubmit={handleAuth}>
             <h1>Create Account</h1>
             <div className="social-container">
-              <button  className="google-icon" onClick={handleGoogleAuth}>
+              <button className="google-icon" onClick={handleGoogleAuth}>
                 <img src="\images\google-icon.png" alt="Google" className="google-icon" />
               </button>
             </div>
@@ -112,7 +115,7 @@ export default function AuthPage() {
           <form onSubmit={handleAuth}>
             <h1>Sign in</h1>
             <div className="social-container">
-              <button  className="google-icon" onClick={handleGoogleAuth}>
+              <button className="google-icon" onClick={handleGoogleAuth}>
                 <img src="\images\google-icon.png" alt="Google" className="google-icon" />
               </button>
             </div>
@@ -131,7 +134,7 @@ export default function AuthPage() {
               onChange={(e) => setPassword(e.target.value)}
               required
             />
-            <a href="#" onClick={(e) => { e.preventDefault(); handleForgotPassword(); }}>
+            <a href="/login" onClick={(e) => { e.preventDefault(); handleForgotPassword(); }}>
               Forgot your password?
             </a>
             <button type="submit">Sign In</button>
