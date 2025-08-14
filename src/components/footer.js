@@ -2,7 +2,7 @@ import "./footer.css"
 
 function Footer() {
     return ( 
-        <footer className="footer" id="contact" data-aos="fade-up">
+      <footer className="footer" id="contact">
         <div className="footer-content">
           <p>© 2025 <strong>FingerTalk</strong>. All rights reserved.</p>
           <p>
@@ -11,13 +11,13 @@ function Footer() {
           </p>
           {/* Social Media Links */}
           <div className="social-icons">
-            <a href="https://www.linkedin.com/in/onkargiri29/" target="_blank" rel="noreferrer" title="LinkedIn">
+            <a href="#" target="_blank" rel="noreferrer" title="LinkedIn">
               <i className="fab fa-linkedin-in"></i>
             </a>
             <a href="https://github.com/Onkargiri29" target="_blank" rel="noreferrer" title="GitHub">
               <i className="fab fa-github"></i>
             </a>
-            <a href="https://www.instagram.com/onkar_giri29/" target="_blank" rel="noreferrer" title="Instagram">
+            <a href="#" target="_blank" rel="noreferrer" title="Instagram">
               <i className="fab fa-instagram"></i>
             </a>
           </div>
