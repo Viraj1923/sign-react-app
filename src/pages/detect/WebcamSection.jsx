@@ -1,4 +1,4 @@
-import React, {  useRef, useState } from "react";
+import React, { useRef, useState } from "react";
 import axios from "axios";
 
 const API_BASE = "https://viraj1923-slr-back-new.hf.space"; // FastAPI backend
@@ -13,7 +13,7 @@ const WebcamSection = ({ language, mode }) => {
 
   // 🗣 Speak detected letter
   const speak = (text) => {
-    speechSynthesis.cancel(); 
+    speechSynthesis.cancel();
     const utterance = new SpeechSynthesisUtterance(text);
     utterance.rate = 0.9;
     speechSynthesis.speak(utterance);
@@ -104,7 +104,7 @@ const WebcamSection = ({ language, mode }) => {
     <div className="video-section">
       <div className="video-container">
         {showFeed ? (
-          <video ref={videoRef} autoPlay playsInline className="webcam-video" />
+          <video ref={videoRef} autoPlay playsInline className="webcam-video" style={{ transform: "scaleX(-1)" }} />
         ) : (
           <p>Click Start Detection to begin</p>
         )}
