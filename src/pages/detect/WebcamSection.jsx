@@ -1,8 +1,6 @@
 import React, { useRef, useState } from "react";
 import axios from "axios";
 
-const API_BASE = "https://viraj1923-slr-back-new.hf.space"; // FastAPI backend
-
 const WebcamSection = ({ language, mode }) => {
   const [showFeed, setShowFeed] = useState(false);
   const [prediction, setPrediction] = useState("");
@@ -10,6 +8,13 @@ const WebcamSection = ({ language, mode }) => {
   const [lastSpokenTime, setLastSpokenTime] = useState(Date.now());
   const videoRef = useRef(null);
   const intervalRef = useRef(null);
+
+
+  //Dynamic API base selection
+  const API_BASE =
+    language === "isl"
+      ? "https://viraj1923-indian-slr-new-backend.hf.space"
+      : "https://viraj1923-slr-back-new.hf.space";
 
   // 🗣 Speak detected letter
   const speak = (text) => {
@@ -126,6 +131,7 @@ const WebcamSection = ({ language, mode }) => {
           </button>
         )}
       </div>
+      <p className="api-info">Using model: {language.toUpperCase()}</p>
     </div>
   );
 };
