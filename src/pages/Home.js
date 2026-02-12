@@ -104,7 +104,7 @@ const Home = () => {
               <p>Model Creation & Integration</p>
             </div>
             <div className="team-member" data-aos="fade-up" data-aos-delay="100">
-              <img src="/images/viraj_mulik.jpg" alt="Viraj Mulik" />
+              <img src="/images/viraj_mulik.jpg.png" alt="Viraj Mulik" />
               <h4>Viraj Mulik</h4>
               <p>Backend & Model Integration</p>
             </div>
