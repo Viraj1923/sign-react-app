@@ -14,7 +14,7 @@ const WebcamSection = ({ language, mode }) => {
   const API_BASE =
     language === "isl"
       ? "https://viraj1923-indian-slr-new-backend.hf.space"
-      : "https://viraj1923-slr-back-new.hf.space";
+      : "https://viraj1923-fingertalk-american-sl-backend.hf.space";
 
   // 🗣 Speak detected letter
   const speak = (text) => {
