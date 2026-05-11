@@ -65,10 +65,14 @@ const WebcamSection = ({ language, mode }) => {
     formData.append("file", blob, "frame.jpg");
 
     try {
-      const res = await fetch(`${API_BASE}/predict`, {
+      const endpoint =
+          mode === "digit"
+          ? "/predict/digit"
+          : "/predict/alphabet";
+
+      const res = await fetch(`${API_BASE}${endpoint}`, {
         method: "POST",
         body: formData,
-        redirect: "follow",
       });
       const data = await res.json();
       const label = data.prediction || data.label;
@@ -98,11 +102,6 @@ const WebcamSection = ({ language, mode }) => {
   const handleStop = async () => {
     setShowFeed(false);
     stopWebcam();
-    try {
-      await axios.post(`${API_BASE}/stop_feed`);
-    } catch (error) {
-      console.error("Error stopping camera:", error);
-    }
   };
 
   return (
