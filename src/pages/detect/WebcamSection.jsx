@@ -1,5 +1,4 @@
 import React, { useRef, useState } from "react";
-import axios from "axios";
 
 const WebcamSection = ({ language, mode }) => {
   const [showFeed, setShowFeed] = useState(false);
