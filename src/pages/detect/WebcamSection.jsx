@@ -65,16 +65,19 @@ const WebcamSection = ({ language, mode }) => {
 
     try {
       const endpoint =
-          mode === "digit"
-          ? "/predict/digit"
-          : "/predict/alphabet";
+        language === "isl"
+        ? "/predict"
+        : "/predict/alphabet";
 
       const res = await fetch(`${API_BASE}${endpoint}`, {
         method: "POST",
         body: formData,
       });
       const data = await res.json();
-      const label = data.prediction || data.label;
+      const label =
+        data.predicted_label ||
+        data.prediction ||
+        data.label;
       setPrediction(label);
 
       // ✅ Debounced speech output
