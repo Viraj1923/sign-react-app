@@ -108,8 +108,6 @@ Includes:
 
 ### Performance:
 
-Performance:
-
 * Training Accuracy: 99%+
 * Validation Accuracy (Offline): ~91–92%
 * Real-Time Prediction Confidence: ~98%
@@ -123,8 +121,6 @@ Performance:
 26 Classes
 
 ### Performance:
-
-Performance:
 
 * Training Accuracy: 99%+
 * Real-Time Prediction Confidence: ~98%
