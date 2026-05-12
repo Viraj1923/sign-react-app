@@ -67,7 +67,7 @@ const WebcamSection = ({ language, mode }) => {
       const endpoint =
         language === "isl"
         ? "/predict"
-        : "/predict/alphabet";
+        : "/predict";
 
       const res = await fetch(`${API_BASE}${endpoint}`, {
         method: "POST",
