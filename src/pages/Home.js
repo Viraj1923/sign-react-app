@@ -66,14 +66,15 @@ const Home = () => {
 
             <div className="feature-item">
               <h4>Technology Stack</h4>
-              <p>
-                <strong>Frontend:</strong> React.js  
-                <strong>Backend:</strong> FastAPI  
-                <strong>Languages:</strong> Python, JavaScript  
-                <strong>Libraries:</strong> TensorFlow, MediaPipe, OpenCV  
-                <strong>Model:</strong> CNN + MobileNet  
-                <strong>Deployment:</strong> Vercel + Hugging Face Spaces
-              </p>
+            
+              <ul style={{ marginTop: "12px", paddingLeft: "20px", lineHeight: "1.8" }}>
+                <li><strong>Frontend:</strong> React.js</li>
+                <li><strong>Backend:</strong> FastAPI</li>
+                <li><strong>Languages:</strong> Python, JavaScript</li>
+                <li><strong>Libraries:</strong> TensorFlow, MediaPipe, OpenCV</li>
+                <li><strong>Model:</strong> CNN + MobileNet</li>
+                <li><strong>Deployment:</strong> Vercel + Hugging Face Spaces</li>
+              </ul>
             </div>
 
             <div className="feature-item">
