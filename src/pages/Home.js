@@ -67,12 +67,12 @@ const Home = () => {
             <div className="feature-item">
               <h4>Technology Stack</h4>
               <p>
-                <strong>Frontend: React.js  
-                <strong>Backend: FastAPI  
-                <strong>Languages: Python, JavaScript  
-                <strong>Libraries: TensorFlow, MediaPipe, OpenCV  
-                <strong>Model: CNN + MobileNet  
-                <strong>Deployment: Vercel + Hugging Face Spaces
+                <strong>Frontend:</strong> React.js  
+                <strong>Backend:</strong> FastAPI  
+                <strong>Languages:</strong> Python, JavaScript  
+                <strong>Libraries:</strong> TensorFlow, MediaPipe, OpenCV  
+                <strong>Model:</strong> CNN + MobileNet  
+                <strong>Deployment:</strong> Vercel + Hugging Face Spaces
               </p>
             </div>
 
