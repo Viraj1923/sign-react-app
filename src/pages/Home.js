@@ -43,7 +43,7 @@ const Home = () => {
           <FaInfoCircle className="about-icon" data-aos="zoom-in" data-aos-delay="200" />
           <h2>About Our Project</h2>
           <p>
-            Our AI-powered system recognizes sign language gestures through a webcam and translates them into text and audio. It supports multiple sign languages, including Indian Sign Language (ISL) and American Sign Language (ASL), making communication easier for individuals with hearing or speech impairments.
+            FingerTalk is an AI-powered sign language recognition system that captures live hand gestures through a webcam and translates them into real-time text and speech output. The platform supports both American Sign Language (ASL) and Indian Sign Language (ISL), helping bridge communication barriers for speech and hearing-impaired individuals.
           </p>
 
           {/* Project Features */}
@@ -67,26 +67,26 @@ const Home = () => {
             <div className="feature-item">
               <h4>Technology Stack</h4>
               <p>
-                <strong>Frontend:</strong> React.js |
-                <strong> Backend:</strong> Flask |
-                <strong> Language:</strong> Python |
-                <strong> Libraries:</strong> TensorFlow, MediaPipe |
-                <strong> Integration:</strong> OpenCV |
-                <strong> Model:</strong> CNN
+                <strong>Frontend: React.js  
+                <strong>Backend: FastAPI  
+                <strong>Languages: Python, JavaScript  
+                <strong>Libraries: TensorFlow, MediaPipe, OpenCV  
+                <strong>Model: CNN + MobileNet  
+                <strong>Deployment: Vercel + Hugging Face Spaces
               </p>
             </div>
 
             <div className="feature-item">
               <h4>Applications</h4>
               <p>
-                Useful in education, healthcare, and public services — enabling smooth interaction through gesture-to-speech translation.
+                Enables real-time communication assistance in education, healthcare, public services, and inclusive workplaces through gesture-to-text and gesture-to-speech translation.
               </p>
             </div>
 
             <div className="feature-item">
               <h4>Impact</h4>
               <p>
-                Empowers the speech/hearing impaired, drives inclusivity, and introduces an empathetic AI solution for communication.
+                Promotes accessibility, digital inclusion, and independent communication for individuals with hearing or speech impairments.
               </p>
             </div>
           </div>
