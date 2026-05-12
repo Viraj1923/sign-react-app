@@ -14,7 +14,7 @@ function Footer() {
             <a href="/" target="_blank" rel="noreferrer" title="LinkedIn">
               <i className="fab fa-linkedin-in"></i>
             </a>
-            <a href="https://github.com/Onkargiri29" target="_blank" rel="noreferrer" title="GitHub">
+            <a href="https://github.com/Viraj1923/FingerTalk-Sign-Language-Recognition" target="_blank" rel="noreferrer" title="GitHub">
               <i className="fab fa-github"></i>
             </a>
             <a href="/" target="_blank" rel="noreferrer" title="Instagram">
