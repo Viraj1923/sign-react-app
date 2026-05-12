@@ -108,8 +108,11 @@ Includes:
 
 ### Performance:
 
+Performance:
+
 * Training Accuracy: 99%+
-* Validation Accuracy: ~91%
+* Validation Accuracy (Offline): ~91–92%
+* Real-Time Prediction Confidence: ~98%
 
 ---
 
@@ -121,8 +124,11 @@ Includes:
 
 ### Performance:
 
-* Stable real-time predictions
-* High confidence detection
+Performance:
+
+* Training Accuracy: 99%+
+* Real-Time Prediction Confidence: ~98%
+* Stable Low-Latency Inference
 
 ---
 
