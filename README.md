@@ -62,7 +62,7 @@ and converts sign gestures into:
 # 🏗️ System Architecture
 
 <p align="center">
-  <img src="assets/dataflow.png" width="900"/>
+  <img src="assets/Architecture.png" width="900"/>
 </p>
 
 ---
@@ -70,7 +70,7 @@ and converts sign gestures into:
 # 📸 Real-Time Prediction Results
 
 <p align="center">
-  <img src="assets/live_predictions.png" width="700"/>
+  <img src="assets/Real-Time Result.png" width="700"/>
 </p>
 
 ---
@@ -80,13 +80,13 @@ and converts sign gestures into:
 ## Accuracy & Loss Curves
 
 <p align="center">
-  <img src="assets/model_metrics.png" width="800"/>
+  <img src="assets/Curves.png" width="800"/>
 </p>
 
 ## Confusion Matrix
 
 <p align="center">
-  <img src="assets/confusion_matrix.png" width="700"/>
+  <img src="assets/Confusion Matrix.png" width="700"/>
 </p>
 
 ---
