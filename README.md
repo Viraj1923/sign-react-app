@@ -18,7 +18,7 @@
 
 ### 🚀 Web Application
 
-🔗 https://fingertalk-app.vercel.app/
+🔗 https://fingertalk-app.vercel.app
 
 ### ☁️ Cloud Backends
 
