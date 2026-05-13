@@ -165,7 +165,7 @@ Includes:
 | Onkar Giri            | Model Creation & Integration |
 | Viraj Patole          | Frontend Development         |
 | Harshvardhan Killedar | Documentation Head           |
-| Digvijay Pawar        | Documentation                |
+| Digvijay Pawar        | Documentation & App Testing  |
 
 ---
 
