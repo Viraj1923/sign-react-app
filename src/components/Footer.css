@@ -1,0 +1,88 @@
+.footer {
+  background: linear-gradient(180deg,
+      #09090b 0%,
+      #111827 45%,
+      #1e1033 100%);
+  color: #eee;
+  
+
+  padding: 28px 20px;
+
+  text-align: center;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+.footer a {
+  color: #00bfff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #8b5cf6;
+}
+
+.social-icons {
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: center;
+  gap: 22px;
+}
+
+.social-icons a {
+  color: white;
+
+  font-size: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 58px;
+  height: 58px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.06);
+
+  border: 1px solid rgba(139, 92, 246, 0.35);
+
+  /* permanent glow */
+  box-shadow:
+    0 0 12px rgba(139, 92, 246, 0.45),
+    0 0 25px rgba(139, 92, 246, 0.25);
+
+  animation: iconPulse 1.8s infinite alternate ease-in-out;
+
+  transition: all 0.35s ease;
+}
+
+@keyframes iconPulse {
+  from {
+    box-shadow:
+      0 0 10px rgba(139, 92, 246, 0.35),
+      0 0 20px rgba(139, 92, 246, 0.18);
+  }
+
+  to {
+    box-shadow:
+      0 0 18px rgba(139, 92, 246, 0.75),
+      0 0 35px rgba(139, 92, 246, 0.4);
+  }
+}
+
+.social-icons a:hover {
+  transform: translateY(-6px) scale(1.12);
+
+  border-color: rgba(139, 92, 246, 1);
+
+  box-shadow:
+    0 0 22px rgba(139, 92, 246, 0.9),
+    0 0 45px rgba(139, 92, 246, 0.55);
+}
