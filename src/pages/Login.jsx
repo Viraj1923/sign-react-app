@@ -30,8 +30,8 @@ export default function AuthPage() {
       toast.success("Google login successful!");
       navigate("/");
     } catch (error) {
-      console.error("Google Sign-in Error:", error.message);
-      toast.error("Failed to sign in with Google");
+        console.error("Google Sign-in Full Error:", error);
+        toast.error(`${error.code}: ${error.message}`);
     }
   };
 
