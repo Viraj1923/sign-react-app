@@ -1,13 +1,13 @@
-# 🤟 FingerTalk – AI Powered Sign Language Recognition System
+# 🤟 FingerTalk – AI-Powered Sign Language Recognition System
 
 <div align="center">
 
 ### Breaking Communication Barriers Through AI, Computer Vision & Deep Learning
 
 ![License](https://img.shields.io/badge/license-MIT-purple)
-![React](https://img.shields.io/badge/Frontend-React-blue)
-![FastAPI](https://img.shields.io/badge/Backend-FastAPI-green)
-![TensorFlow](https://img.shields.io/badge/ML-TensorFlow-orange)
+![Frontend](https://img.shields.io/badge/Frontend-React-blue)
+![Backend](https://img.shields.io/badge/Backend-FastAPI-green)
+![ML](https://img.shields.io/badge/ML-TensorFlow-orange)
 ![Status](https://img.shields.io/badge/Status-Live-success)
 
 </div>
@@ -23,39 +23,58 @@
 ### ☁️ Cloud Backends
 
 🇺🇸 **ASL API**
+
 🔗 https://huggingface.co/spaces/Viraj1923/FingerTalk_American_SL_Backend_Version_2
 
 🇮🇳 **ISL API**
+
 🔗 https://huggingface.co/spaces/Viraj1923/FingerTalk_Indian_SL_Backend
 
 ---
 
 # 📌 About FingerTalk
 
-FingerTalk is a real-time AI-powered sign language recognition platform that bridges communication between hearing/speech-impaired individuals and non-signers.
+FingerTalk is a real-time AI-powered sign language recognition platform designed to bridge the communication gap between hearing/speech-impaired individuals and non-signers.
 
-The system supports:
+The platform supports:
 
-* 🇺🇸 American Sign Language (ASL)
-* 🇮🇳 Indian Sign Language (ISL)
+- 🇺🇸 American Sign Language (ASL)
+- 🇮🇳 Indian Sign Language (ISL)
 
 and converts sign gestures into:
 
 ✅ Text
+
 ✅ Speech
-✅ Real-time Predictions
+
+✅ Real-time predictions
+
+---
+
+# 🚀 Project Journey
+
+What started as a small demo project during our third semester gradually evolved into a research publication and later into our final-year mega project.
+
+Over the course of two years, FingerTalk expanded from a basic proof of concept into a complete AI-powered web platform featuring:
+
+- Real-time gesture recognition
+- Cloud-deployed ML APIs
+- Dual-language support (ASL + ISL)
+- Text-to-speech integration
+- Modern frontend and backend architecture
 
 ---
 
 # ✨ Features
 
-* 🎥 Real-time webcam gesture detection
-* 🧠 Deep learning based sign classification
-* ✋ MediaPipe hand landmark extraction
-* 🔊 Text-to-Speech output
-* ☁️ Cloud deployed ML APIs
-* 📱 Responsive web interface
-* ⚡ Low latency predictions
+- 🎥 Real-time webcam gesture detection
+- 🧠 Deep-learning-based sign classification
+- ✋ MediaPipe hand landmark extraction
+- 🔊 Text-to-speech output
+- ☁️ Cloud-deployed ML APIs
+- 📱 Responsive web interface
+- ⚡ Low-latency predictions
+- 🌎 Dual-language support (ASL & ISL)
 
 ---
 
@@ -67,11 +86,13 @@ and converts sign gestures into:
 
 ---
 
-# 📸 Real-Time Prediction Results
+# 📸 Application Demo
 
 <p align="center">
-  <img src="assets/Real-Time Result.png" width="700"/>
+  <img src="assets/Real-Time Result.png" width="750"/>
 </p>
+
+> 💡 Replace the image above with a GIF or short demo video for better visualization.
 
 ---
 
@@ -93,38 +114,51 @@ and converts sign gestures into:
 
 # 🧠 ML Model Details
 
-## ASL Model
+## 🇺🇸 ASL Model
 
-### Classes:
+### Classes
 
-29 Classes
+- A–Z alphabets
+- Hello
+- Thank You
+- I Love You
 
-Includes:
+### Performance
 
-* A–Z Alphabets
-* HELLO
-* THANK_YOU
-* I_LOVE_YOU
-
-### Performance:
-
-* Training Accuracy: 99%+
-* Validation Accuracy (Offline): ~91–92%
-* Real-Time Prediction Confidence: ~98%
+- Training Accuracy: 99%+
+- Validation Accuracy (Offline): ~91–92%
+- Optimized for real-time inference
 
 ---
 
-## ISL Model
+## 🇮🇳 ISL Model
 
-### Classes:
+### Classes
 
-26 Classes
+- A–Z alphabets
 
-### Performance:
+### Performance
 
-* Training Accuracy: 99%+
-* Real-Time Prediction Confidence: ~98%
-* Stable Low-Latency Inference
+- Training Accuracy: 99%+
+- Validation Accuracy (Offline): ~98%
+- Stable low-latency inference
+
+---
+
+# ⚠️ Real-World Challenges
+
+One of the biggest lessons we learned while building FingerTalk was that training an AI model is only one part of the problem.
+
+Real-world deployment introduces several challenges:
+
+- Different lighting conditions
+- Webcam quality variations
+- Gesture differences between users
+- Background noise
+- Real-time inference constraints
+- Model generalization
+
+Although the reported metrics were obtained under controlled testing conditions, real-world performance may vary.
 
 ---
 
@@ -132,58 +166,92 @@ Includes:
 
 ## Frontend
 
-* React.js
-* Vite
-* React Webcam
-* CSS
+- React.js
+- Vite
+- React Webcam
+- CSS
 
 ## Backend
 
-* FastAPI
-* Uvicorn
-* Python
+- FastAPI
+- Python
+- Uvicorn
 
 ## Machine Learning
 
-* TensorFlow / Keras
-* OpenCV
-* MediaPipe
-* NumPy
+- TensorFlow / Keras
+- MediaPipe
+- OpenCV
+- NumPy
+- Scikit-learn
 
 ## Deployment
 
-* Vercel
-* Hugging Face Spaces
+- Vercel
+- Hugging Face Spaces
+
+---
+
+# 📅 Project Timeline
+
+📌 **2024**
+
+- Initial demo project
+
+📌 **2025**
+
+- Research paper submission
+
+📌 **2026**
+
+- Final-year mega project expansion
+
+📌 **2026**
+
+- Cloud deployment and optimization
 
 ---
 
 # 👨‍💻 Team
 
-| Member                | Role                         |
-| --------------------- | ---------------------------- |
-| Viraj Mulik           | Backend & Model Integration  |
-| Onkar Giri            | Model Creation & Integration |
-| Viraj Patole          | Frontend Development         |
-| Harshvardhan Killedar | Documentation Head           |
-| Digvijay Pawar        | Documentation & App Testing  |
+| Member | Role |
+|----------|----------|
+| Viraj Mulik | Backend & Model Integration |
+| Onkar Giri | Model Creation & Integration |
+| Viraj Patole | Frontend Development |
+| Harshvardhan Killedar | Documentation Head |
+| Digvijay Pawar | Documentation & Testing |
 
 ---
 
 # 🎯 Future Scope
 
-* Sentence generation
-* Dynamic gesture recognition
-* Mobile deployment
-* Edge AI optimization
+- Sentence generation
+- Dynamic gesture recognition
+- Mobile deployment
+- Edge AI optimization
+- Support for additional sign languages
+
+---
+
+# 📄 Research Publication
+
+Our research paper:
+
+**"FingerTalk: Revolutionizing Communication with a Machine Learning Breakthrough in Sign Language Recognition"**
+
+was published in **Procedia Computer Science (Elsevier)**.
+
+📄 Add your ScienceDirect link here.
 
 ---
 
 # 📜 License
 
-Licensed under MIT License.
+Licensed under the MIT License.
 
 ---
 
 # ⭐ Support
 
-If you like this project, consider giving it a star ⭐
+If you found this project interesting, consider giving it a star ⭐
