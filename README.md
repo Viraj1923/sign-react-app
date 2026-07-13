@@ -142,6 +142,8 @@ FingerTalk uses independently deployed machine-learning APIs hosted on Hugging F
 
 The React frontend communicates with these services through REST APIs for real-time predictions.
 
+---
+
 # ⚠️ Real-World Challenges
 
 One of the biggest lessons we learned while building FingerTalk was that training an AI model is only one part of the problem.
