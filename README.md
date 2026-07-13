@@ -20,16 +20,6 @@
 
 🔗 https://fingertalk-app.vercel.app
 
-### ☁️ Cloud Backends
-
-🇺🇸 **ASL API**
-
-🔗 https://huggingface.co/spaces/Viraj1923/FingerTalk_American_SL_Backend_Version_2
-
-🇮🇳 **ISL API**
-
-🔗 https://huggingface.co/spaces/Viraj1923/FingerTalk_Indian_SL_Backend
-
 ---
 
 # 📌 About FingerTalk
@@ -142,6 +132,15 @@ Over the course of two years, FingerTalk expanded from a basic proof of concept 
 - Stable low-latency inference
 
 ---
+
+## ☁️ Backend Services
+
+FingerTalk uses independently deployed machine-learning APIs hosted on Hugging Face Spaces.
+
+- https://huggingface.co/spaces/Viraj1923/FingerTalk_American_SL_Backend_Version_2
+- https://huggingface.co/spaces/Viraj1923/FingerTalk_Indian_SL_Backend
+
+The React frontend communicates with these services through REST APIs for real-time predictions.
 
 # ⚠️ Real-World Challenges
 
