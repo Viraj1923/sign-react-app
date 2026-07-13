@@ -4,8 +4,8 @@ export const predictSign = async (
 ) => {
   const API_BASE =
     language === "isl"
-      ? "https://viraj1923-fingertalk-indian-sl-backend.hf.space"
-      : "https://viraj1923-fingertalk-american-sl-backend-version-2.hf.space";
+      ? import.meta.env.VITE_ISL_API
+      : import.meta.env.VITE_ASL_API;
 
   const formData =
     new FormData();
