@@ -92,8 +92,6 @@ Over the course of two years, FingerTalk expanded from a basic proof of concept 
   <img src="assets/Real-Time Result.png" width="750"/>
 </p>
 
-> 💡 Replace the image above with a GIF or short demo video for better visualization.
-
 ---
 
 # 📊 Model Performance
@@ -228,7 +226,6 @@ Although the reported metrics were obtained under controlled testing conditions,
 
 - Sentence generation
 - Dynamic gesture recognition
-- Mobile deployment
 - Edge AI optimization
 - Support for additional sign languages
 
@@ -242,7 +239,7 @@ Our research paper:
 
 was published in **Procedia Computer Science (Elsevier)**.
 
-📄 Add your ScienceDirect link here.
+📄 https://www.sciencedirect.com/science/article/pii/S1877050926014031
 
 ---
 
