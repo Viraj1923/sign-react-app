@@ -62,7 +62,7 @@ Over the course of two years, FingerTalk expanded from a basic proof of concept 
 - ✋ MediaPipe hand landmark extraction
 - 🔊 Text-to-speech output
 - ☁️ Cloud-deployed ML APIs
-- 📱 Responsive web interface
+- 📱 Responsive interface optimized for both desktop and mobile devices
 - ⚡ Low-latency predictions
 - 🌎 Dual-language support (ASL & ISL)
 
